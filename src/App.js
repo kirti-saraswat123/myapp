@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Nav, NavItem, NavLink } from "reactstrap";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="header">
+      <Nav>
+        <NavItem >
+          <NavLink active href="#" >
+            SHOP
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink disabled href="#">
+            NEW IN
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink disabled href="#">
+            BRANDS
+          </NavLink>
+        </NavItem>
+
+        <NavItem>
+          <NavLink disabled href="#">
+            GIFT
+          </NavLink>
+        </NavItem>
+
+        <NavItem>
+          <NavLink disabled href="#">
+            OFFER
+          </NavLink>
+        </NavItem>
+      </Nav>
+    </div>
     </div>
   );
 }
-
-export default App;
