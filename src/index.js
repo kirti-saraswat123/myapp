@@ -10,7 +10,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Ccard/>
+    <div style={{
+      display:"flex"
+    }}>
+    {
+      [1,2,3].map((item)=>{
+    return <Ccard />
+      })
+    }
+    </div>
   </React.StrictMode>
 );
 
